@@ -1,2 +1,2 @@
 # simple_scrips
-comparison of simple script syntax between popular programming languages
+Comparison of the syntax of simple scripts written in popular programming languages such as Python, C, C#, and Rust.

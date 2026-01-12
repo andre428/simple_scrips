@@ -1,0 +1,6 @@
+Python w wersji 3.13 jest najnowsza...
+Jest to test, tej linii nie ma
+Ale Python to tez test kolejna linia
+Jezeli nie ma to nie ma i tej linii
+Niestety tej tez byc nie powinno
+Ale ta juz tak, bo zawiera slowko Python

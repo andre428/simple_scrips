@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int biggest_num(int *nums, int size) {
+int biggest_num(const int *nums, const int size) {
     if (size == 0) {
         printf("Error: List cannot be empty\n");
         exit(1);
@@ -17,26 +17,27 @@ int biggest_num(int *nums, int size) {
     return biggest;
 }
 
+
 int main() {
-    char input[1000];
+    char input[10];
     printf("Enter numbers separated by spaces: ");
     fgets(input, sizeof(input), stdin);
     
     int numbers[100];
     int count = 0;
-    
-    char *token = strtok(input, " \n");
+
+    const char *token = strtok(input, " \n");
     while (token != NULL && count < 100) {
-        numbers[count++] = atoi(token);
-        token = strtok(NULL, " \n");
+        numbers[count++] = strtol(token, nullptr, 10);
+        token = strtok(nullptr, " \n");
     }
     
     if (count == 0) {
         printf("Error: No numbers entered\n");
         return 1;
     }
-    
-    int result = biggest_num(numbers, count);
+
+    const int result = biggest_num(numbers, count);
     printf("Biggest number: %d\n", result);
     
     return 0;

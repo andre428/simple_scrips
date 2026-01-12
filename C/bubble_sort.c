@@ -33,7 +33,7 @@ int main() {
     
     int *bubble_list = malloc(list_len * sizeof(int));
     
-    srand(time(NULL));
+    srand(time(nullptr));
     printf("List to sort: ");
     for (int i = 0; i < list_len; i++) {
         bubble_list[i] = rand() % 333 + 1;

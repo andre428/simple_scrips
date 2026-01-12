@@ -1,7 +1,7 @@
 .git
-.idea
+.idea/
 python/.idea/
 python/.venv/
-C/cmake-build-debug
-C/.idea
+C/cmake-build-debug/
+C/.idea/
 
